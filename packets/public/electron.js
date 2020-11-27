@@ -1,6 +1,7 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
 const isDev = require("electron-is-dev");
+const server = require("../nodeApp");
 
 function createWindow() {
   const win = new BrowserWindow({
