@@ -1,0 +1,34 @@
+.home {
+  display: flex;
+  height: 100%;
+  .nav-bar {
+    flex: 0.4;
+    background-color: #032347;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    transition: all 200ms ease-in;
+
+    .MenuItem {
+      a {
+        display: none;
+        visibility: hidden;
+      }
+    }
+    &:hover {
+      transition: all 10ms ease-in;
+      flex: 1;
+      .MenuItem {
+        a {
+          display: block;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  .window {
+    flex: 9;
+  }
+}
